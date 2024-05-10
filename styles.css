@@ -50,14 +50,6 @@ html{
 }
 
 /* Card Containers */
-.seasoning-container{
-    display: flex;
-    flex-wrap: wrap;
-    background: pink;
-    border: 1px solid red;
-    width: 100%;
-    gap: 10px;
-}
 
 .section-header{
     display: flex;
@@ -70,35 +62,32 @@ html{
     background-color: white;
 }
 
-.appetizer-container{
+.containers{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+
+.container.seasonings{
+    background: pink;
+}
+
+.container.appetizers{
     background: yellow;
-    width: 100%;
-    gap: 10px;
 }
 
-.mains-container{
-    display: flex;
-    flex-wrap: wrap;
+.container.mains{
     background: brown;
-    width: 100%;
-    gap: 10px;
 }
 
-.desserts-container{
-    display: flex;
-    flex-wrap: wrap;
+.container.desserts{
     background: orange;
-    width: 100%;
-    gap: 10px;
 }
 
-.baked-goods-container{
-    display: flex;
-    flex-wrap: wrap;
+.container.baked-goods{
     background-color: purple;
-    width: 100%;
 }
 
 
