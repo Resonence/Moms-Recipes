@@ -109,6 +109,9 @@ body{
     color: rgb(100, 100, 255);
     cursor: pointer;
 }
+.list-links:visited{
+    color: blue;
+}
 /* Card Containers */
 .section-header{
     display: flex;
