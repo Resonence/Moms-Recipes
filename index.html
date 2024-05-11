@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="main-body-homepage">
-    <div class="homepage-header">Mom's Recipes</div>
+    <header class="homepage-header">
+        <div class="homepage-left">Mom's Recipes</div>
+        <div class="homepage-right">Made By Conner</div>
+    </header>
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <div class="homepage-list"><li><a class="list-links" href="#section1">Seasonings/Sauces</a></li></div>
+            <div class="homepage-list"><li><a class="list-links" href="#section2">Appetizers</a></li></div>
+            <div class="homepage-list"><li><a class="list-links" href="#section3">Main Dishes</a></li></div>
+            <div class="homepage-list"><li><a class="list-links" href="#section4">Desserts</a></li></div>
+            <div class="homepage-list"><li><a class="list-links" href="#section5">Baked Goods</a></li></div>
+        </ul>
+    </div>
         <div class="homepage-body">
-            <div class="sidebar">
-                <ul class="sidebar-list">
-                    <li class="homepage-list">Seasonings/Sauces/Marinas</li>
-                    <li class="homepage-list">Appetizers</li>
-                    <li class="homepage-list">Main Dishes</li>
-                    <li class="homepage-list">Desserts</li>
-                    <li class="homepage-list">Baked Goods</li>
-                </ul>
-            </div>
+            
             <div class="card-container">
-                <div class="containers seasonings">
+                <div class="containers seasonings" id="section1">
                     <div class="section-header">Seasonings</div>
-                    <div class="cards seasoning">Slow Cooker Marina</div>
+                    <div class="cards seasoning">Slow Cooker Marinara</div>
                     <div class="cards seasoning">Jerk Chicken Seasoning</div>
                     <div class="cards seasoning">Taco Seasoning</div>
                     <div class="cards seasoning">Chicken Seasoning</div>
@@ -40,7 +44,7 @@
                     <div class="cards seasoning">Peach Jam/Freezer</div>
                 </div>
 
-                <div class="containers appetizers">
+                <div class="containers appetizers" id="section2">
                     <div class="section-header">Appetizers</div>
                     <div class="cards appetizer">Buffalo Chicken Dip (Crock Pot)</div>
                     <div class="cards appetizer">Italian Antipasta Brocolli Salad</div>
@@ -52,7 +56,7 @@
                     <div class="cards appetizer">Spinach Phyllo Rollups</div>
                 </div>
 
-                <div class="containers mains">
+                <div class="containers mains" id="section3">
                     <div class="section-header">Mains</div>
                     <div class="cards mains">Korean Spinach</div>
                     <div class="cards mains">Mom's Stuffing</div>
@@ -64,7 +68,7 @@
                     <div class="cards mains">Ham & Spinach Crustless Quiche</div>
                 </div>
 
-                <div class="containers desserts">
+                <div class="containers desserts" id="section4">
                     <div class="section-header">Desserts</div>
                     <div class="cards desserts">Alice's Vanilla Slices</div>
                     <div class="cards desserts">Conner's Pumpkin Pie</div>
@@ -75,7 +79,7 @@
                     <div class="cards desserts">Alice's Easy Cheesecake</div>
                 </div>
 
-                <div class="containers baked-goods">
+                <div class="containers baked-goods" id="section5">
                     <div class="section-header">Baked Goods</div>
                     <div class="cards desserts">Gingerbread Man</div>
                     <div class="cards desserts">Thimble Cookies</div>
@@ -86,8 +90,10 @@
                     <div class="cards desserts">Lisa's Peanut Butter Cookies</div>
                     <div class="cards desserts">Peanut Butter Cookies</div>
                 </div>
-            </div>
-        
+            </div> 
         </div>
-</body>
+        <!-- Scroll up button -->
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to Top">^</button>
+        <script src="script.js" defer></script>
+    </body>
 </html>
